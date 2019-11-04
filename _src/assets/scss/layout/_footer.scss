@@ -1,5 +1,83 @@
 .footer {
     background-color: $secondaryColor;
+    padding: rem(40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
+    a{
+        color: $white;
+    
+    }
+    a:hover {
+        color: $grey;
+    }
 
+    ul,li {
+        margin-top: rem(15);
+    }
+
+    &__button {
+        background-color: $white;
+        border: $white 1px solid;
+        border-radius: rem(50);
+        padding: rem(10);
+        width: rem(50);
+        height: rem(50);
+        position: absolute;
+        margin-top: rem(-60);
+    }
+
+    &__nav {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $basicFont;
+        color: $white;
+        margin: rem(20) 0;
+    }
+
+    &__social {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $basicFont;
+        color: $white;
+        margin: rem(20) 0;
+    }
+
+    &__copy {
+        text-align: center;
+        font-family: $basicFont;
+        color: $white;
+        margin: rem(20) 0;
+    }
+
+}
+
+.heart {
+    color: $buttonColor;
+}
+
+@include media ($tablet) {
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .footer__nav {
+        text-align: left;
+        order: 1;
+    }
+    .footer__social {
+        text-align: left;
+        order: 0;
+    }
+    .footer__copy {
+        text-align: left;
+        order: 2;
+    }
+    
 }

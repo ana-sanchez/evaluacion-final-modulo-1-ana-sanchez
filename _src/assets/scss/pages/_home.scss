@@ -1,3 +1,5 @@
+/**CONTENT PRINCIPAL**/
+
 .content {
     width: 100%;
 }
@@ -36,3 +38,58 @@
         }
     }
 }
+
+/**CONTENT RESEARCH**/
+
+.content__research {
+    width: 100%;
+    background-color: #eff9ff;
+    padding: rem(25) rem(15);
+    text-align: center;
+
+        h3 {
+            font-family: $titleFont;
+            font-size: rem(18);
+        }
+
+        p {
+            font-family: $basicFont;
+            font-size: rem(18);
+            line-height: rem(30);
+        }
+    
+}
+
+.section__grid {
+    padding: 0 rem(70);
+
+    &__item {
+        margin-top: rem(50);
+    }
+
+    @include media ($tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        
+    }
+}
+
+.button__content {
+    width: rem(180);
+    background-color: $buttonColor;
+    border: $buttonColor 2px solid;
+    border-radius: rem(24);
+    padding: rem(10);
+    margin: rem(40) 0;
+
+    p {
+        font-family: $basicFont;
+        color: $white;
+        font-size: rem(20);
+        margin: 0;
+        font-weight: 500;
+    }
+}
+        
+

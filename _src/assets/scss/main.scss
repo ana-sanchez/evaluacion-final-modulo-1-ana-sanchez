@@ -9,3 +9,16 @@
 @import 'pages/home';
 
 
+
+p {
+    font-family: $basicFont;
+}
+
+h1, h2, h3 {
+    font-family: $titleFont;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+}

@@ -56,10 +56,11 @@
         height: rem(50);
         width: rem(50);
         background-color: white;
-        margin-top: 50;
+        margin: 50;
         animation-name: intro;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        cursor: pointer;
     }
 }
 

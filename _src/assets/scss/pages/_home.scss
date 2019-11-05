@@ -16,7 +16,8 @@
     &__title {
         font-family: $titleFont;
         color: $black;
-        font-size: rem(24)
+        font-size: rem(24);
+        line-height: rem(30);
     }
     &__p {
         font-family: $basicFont;
@@ -61,7 +62,7 @@
 }
 
 .section__grid {
-    padding: 0 rem(70);
+    padding: 0 rem(60);
 
     &__item {
         margin-top: rem(50);
@@ -91,5 +92,10 @@
         font-weight: 500;
     }
 }
-        
+
+
+@include media ($tablet) {
+    
+    
+}
 

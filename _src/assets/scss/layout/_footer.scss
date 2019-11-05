@@ -2,23 +2,25 @@
     width: 100%;
     background-color: $secondaryColor;
     padding: rem(40);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    
 
     a{
         color: $white;
     
     }
     a:hover {
-        color: $grey;
+        color: rgba(255, 255, 255, 0.5);
     }
 
     ul,li {
         margin-top: rem(15);
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     &__button {
@@ -28,10 +30,14 @@
         padding: rem(10);
         width: rem(50);
         height: rem(50);
+        transform: translate(-50%, -120%);
         position: absolute;
-        margin-top: rem(-60);
-        
+        left: 50%;
+        -webkit-box-shadow: 3px 3px 20px 3px #00000073;
+        box-shadow: 3px 3px 20px 3px #00000073;
+      
     }
+
 
     &__nav {
         text-align: center;
@@ -63,7 +69,7 @@
 }
 
 @include media ($tablet) {
-    .footer {
+    .footer__wrapper {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;

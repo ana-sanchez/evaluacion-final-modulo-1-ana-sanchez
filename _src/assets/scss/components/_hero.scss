@@ -17,12 +17,25 @@
         font-size: rem(42);
         line-height: rem(55);
         margin-top: rem(60);
+
+        @include media ($tablet) {
+            font-size: rem(80);
+            line-height: rem(106);
+            margin-bottom: 0;
+        }
     }
 
     &__subtitle {
         color: white;
         font-family: $basicFont;
         margin-top: 0;
+
+        @include media ($tablet) {
+            font-size: rem(24);
+            line-height: rem(106);
+            
+        }
+
     }
 
     &__button {

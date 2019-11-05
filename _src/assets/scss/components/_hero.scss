@@ -38,6 +38,7 @@
         color: white;
         font-family: $basicFont;
         margin-top: 0;
+        text-transform: capitalize;
 
         @include media ($tablet) {
             font-size: rem(24);

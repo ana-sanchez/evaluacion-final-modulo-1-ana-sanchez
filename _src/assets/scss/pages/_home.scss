@@ -12,6 +12,7 @@
         font-family: $basicFont;
         color: $categoryColor;
         font-size: rem(14);
+        text-transform: capitalize;
     }
 
     &__title {

@@ -64,6 +64,13 @@
 
 }
 
+
+.footer__button:hover {
+    cursor: pointer;
+    border: rgb(242, 96, 2) 2px solid;
+    transition: border ease 1s;
+}
+
 .heart {
     color: $buttonColor;
 }

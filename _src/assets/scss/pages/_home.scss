@@ -41,6 +41,19 @@
     }
 }
 
+.content__principal__button:hover {
+    cursor: pointer;
+    background-color: $buttonColor;
+    transition: background-color ease-in 0.3s;
+
+    p{
+        color: $white;
+        transition: color ease-in 0.3s;
+
+
+    }
+}
+
 /**CONTENT RESEARCH**/
 
 .content__research {
@@ -91,6 +104,16 @@
     }
 }
 
+.button__content:hover{
+    cursor: pointer;
+    background-color: $white;
+    transition: background-color ease-in 0.3s;
+    
+    p{
+        color: $buttonColor;
+        transition: color ease-in 0.3s;
+    }
+}
 
 @include media ($tablet) {
 

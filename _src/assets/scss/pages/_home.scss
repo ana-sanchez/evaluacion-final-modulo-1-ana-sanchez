@@ -7,17 +7,6 @@
 .content__principal {
     padding: rem(25) rem(15);
 
-    @include media ($tablet) {
-        padding: rem(35) 0;
-        padding-left: rem(39);
-        padding-right: rem(60);
-
-    }
-
-    @include media ($desktop) {
-       margin: 0 rem(275); 
-    }
-
 
     &__category {
         font-family: $basicFont;
@@ -83,22 +72,6 @@
             margin-top: rem(20);
         }
     }
-
-    @include media ($tablet) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 50px 50px;
-        
-    }
-
-    @include media ($desktop) {
-        padding: 0 rem(0);
-        max-width: rem(800);
-
-
-    }
-
-
 }
 
 .button__content {
@@ -120,9 +93,36 @@
 
 
 @include media ($tablet) {
+
+    .content__principal {
+        padding: rem(35) 0;
+        padding-left: rem(39);
+        padding-right: rem(60);
+    }
+
+    .section__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 50px;
+    }
+
     .button__content {
         margin-top: rem(80);
     }
     
 }
 
+@include media ($desktop) {
+
+    .content__principal {
+        margin: auto;
+        max-width: rem(900); 
+    }
+
+    .section__grid {
+        padding: 0 rem(0);
+        max-width: rem(900);
+        margin: auto;
+    }
+
+}

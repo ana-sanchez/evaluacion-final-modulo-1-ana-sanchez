@@ -35,7 +35,10 @@
         left: 50%;
         -webkit-box-shadow: 3px 3px 20px 3px #00000073;
         box-shadow: 3px 3px 20px 3px #00000073;
-      
+        animation-duration: 2s;
+        animation-name: arrow;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
     }
 
 
@@ -64,6 +67,24 @@
 
 }
 
+@keyframes arrow {
+    0% {
+        transform: translate(-50%, -0%);
+        opacity: 0;
+
+    }
+  
+    50% {
+        transform: translate(-50%, -60%);
+        opacity: 0.5;
+        
+    }
+
+    100% {
+        transform: translate(-50%, -120%);
+        opacity: 1;
+    }
+  }
 
 .footer__button:hover {
     cursor: pointer;

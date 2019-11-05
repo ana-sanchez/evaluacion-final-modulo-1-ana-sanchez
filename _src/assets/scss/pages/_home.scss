@@ -54,9 +54,9 @@
     }
 }
 
-/**CONTENT RESEARCH**/
+/**CONTENT SECONDARY**/
 
-.content__research {
+.content__secondary {
     width: 100%;
     background-color: #eff9ff;
     padding: rem(25) rem(15);
@@ -114,6 +114,8 @@
         transition: color ease-in 0.3s;
     }
 }
+
+/**MEDIA QUERIES**/
 
 @include media ($tablet) {
 

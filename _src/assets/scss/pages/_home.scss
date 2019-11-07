@@ -90,7 +90,7 @@
 
 .button__content {
     width: rem(180);
-    background-color: $buttonColor;
+    background-color: $white;
     border: $buttonColor 2px solid;
     border-radius: rem(24);
     padding: rem(10);
@@ -98,7 +98,7 @@
 
     p {
         font-family: $basicFont;
-        color: $white;
+        color: $buttonColor;
         font-size: rem(20);
         margin: 0;
         font-weight: 500;
@@ -107,11 +107,11 @@
 
 .button__content:hover{
     cursor: pointer;
-    background-color: $white;
+    background-color: $buttonColor;
     transition: background-color ease-in 0.3s;
     
     p{
-        color: $buttonColor;
+        color: $white;
         transition: color ease-in 0.3s;
     }
 }
